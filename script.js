@@ -1,21 +1,12 @@
 "use strict";
 
-const helloButton = document.querySelector("#hello-button");
-const aboutButton = document.querySelector("#about-button");
-const about = document.querySelector("#about");
-const feedback = document.querySelector("#feedback");
+document.querySelectorAll("button[aria-controls]").forEach((button) => {
+  const panel = document.getElementById(button.getAttribute("aria-controls"));
 
-helloButton.addEventListener("click", () => {
-  feedback.textContent = "Hello! Your website is up and running. 👋";
-});
-
-aboutButton.addEventListener("click", () => {
-  const expanded = aboutButton.getAttribute("aria-expanded") === "true";
-  aboutButton.setAttribute("aria-expanded", String(!expanded));
-  about.hidden = expanded;
-  aboutButton.replaceChildren(
-    document.createTextNode(expanded ? "Learn more " : "Show less "),
-    Object.assign(document.createElement("span"), { textContent: expanded ? "+" : "−" })
-  );
-  aboutButton.lastElementChild.setAttribute("aria-hidden", "true");
+  button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!expanded));
+    panel.hidden = expanded;
+    button.querySelector(".button-icon").textContent = expanded ? "+" : "−";
+  });
 });

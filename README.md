@@ -1,9 +1,28 @@
-# Placeholder website
+# OpenHood
 
-A responsive, static placeholder page built with HTML, CSS, and JavaScript. No dependencies or build step.
+A responsive landing page for **OpenHood**, shop management software for independent auto repair shop owners. Built with HTML, CSS, and JavaScript, with no dependencies or build step.
 
-- **Say hello** displays a greeting.
-- **Learn more** expands and collapses a short description.
+- **Meet OpenHood** expands and collapses the application overview.
+- **Who it's for** expands and collapses information about the intended audience.
+- **What we're building** describes six groups of planned capabilities from the supplied use cases.
+- The existing Google Analytics tag is retained.
+
+This is a product introduction, not a working shop management application. Feature descriptions are labeled as planned; the page does not perform scans, stream video, send messages, approve repairs, or redeem rewards.
+
+## Content source
+
+The feature copy is based on `Use Cases (Epics).pdf` (October 29, 2026), pages 3–5. All twelve substantive auto repair use cases are represented:
+
+| Page section | Use case IDs | Source pages |
+| --- | --- | --- |
+| Show the problem | F26AUTO-UC-7, F26AUTO-UC-10 | 3 |
+| Keep everyone in the loop | F26AUTO-UC-6 | 5 |
+| Make the next step clear | F26AUTO-UC-5, F26AUTO-UC-15, F26AUTO-UC-16 | 4–5 |
+| Talk it through | F26AUTO-UC-11, F26AUTO-UC-12 | 3 |
+| Open a window into the bay | F26AUTO-UC-8, F26AUTO-UC-9 | 4 |
+| Make the wait a little better | F26AUTO-UC-13, F26AUTO-UC-14 | 4 |
+
+The home organization example (F26AUTO-UC-3) and blank template (F26AUTO-UC-4) are excluded. F26AUTO-UC-7 contains a copied home organization action; the page follows that entry's vehicle-damage title and stated outcome instead.
 
 ## Preview
 
@@ -25,7 +44,7 @@ Then visit <http://localhost:8000>. Press Ctrl+C to stop the server.
 
 For a project repository, the URL is normally `https://<username>.github.io/<repository>/`. Relative asset paths let this page work under a repository subpath as well as on a custom domain. The `.nojekyll` file disables Jekyll processing.
 
-See [GitHub's publishing source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for details. This project has not been published automatically.
+See [GitHub's publishing source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for details. These changes do not automatically publish the site.
 
 ## Customize
 

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A simple placeholder website. Something great is on the way."
+      content="Meet OpenHood, shop management software for independent auto repair shop owners, designed around transparent inspections, customer communication, and repair approvals."
     />
-    <meta name="theme-color" content="#f5f7fb" />
-    <title>Welcome | Placeholder</title>
+    <meta name="theme-color" content="#f5f8f6" />
+    <title>OpenHood | Independent Auto Repair Shop Management</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <!-- Google tag (gtag.js) -->
@@ -27,59 +27,145 @@
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="./" aria-label="Placeholder home"
-        ><span class="brand-mark" aria-hidden="true">p.</span>placeholder</a
+      <a class="brand" href="./" aria-label="OpenHood home"
+        ><span class="brand-mark" aria-hidden="true">oh.</span>OpenHood</a
       >
       <span class="status"
         ><span aria-hidden="true"></span>Work in progress</span
       >
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="welcome" aria-labelledby="welcome-title">
-        <span class="eyebrow">A fresh start</span>
+        <span class="eyebrow">Independent shops. One OpenHood.</span>
         <h1 id="welcome-title">
-          A little space for<br /><span>something great.</span>
+          Your shop.<br /><span>Under one hood.</span>
         </h1>
         <p class="intro">
-          Welcome to our corner of the internet. This is a simple placeholder
-          while we put the next chapter together.
+          Meet OpenHood: shop management software for independent auto repair
+          shop owners. Keep your team and customers on the same page, from the
+          first inspection to the repair decision.
         </p>
         <div class="actions">
-          <button class="button button-primary" id="hello-button" type="button">
-            Say hello <span aria-hidden="true">↗</span>
+          <button
+            class="button button-primary"
+            id="overview-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="overview"
+          >
+            Meet OpenHood <span class="button-icon" aria-hidden="true">+</span>
           </button>
           <button
             class="button button-secondary"
-            id="about-button"
+            id="audience-button"
             type="button"
             aria-expanded="false"
-            aria-controls="about"
+            aria-controls="audience"
           >
-            Learn more <span aria-hidden="true">+</span>
+            Who it's for <span class="button-icon" aria-hidden="true">+</span>
           </button>
         </div>
-        <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
-        <div class="about" id="about" hidden>
-          <h2>Small beginnings. Endless possibilities.</h2>
+        <div class="about" id="overview" hidden>
+          <h2>Less phone tag. More transparency.</h2>
           <p>
-            This sample page uses just HTML, CSS, and JavaScript. It's ready to
-            customize and host on GitHub Pages.
+            OpenHood is being designed to connect inspection findings, repair
+            recommendations, and customer decisions. Give customers a clearer
+            picture of the work, and give your team a clearer view of what is
+            waiting for approval.
+          </p>
+        </div>
+        <div class="about" id="audience" hidden>
+          <h2>Your shop, your team, your customers.</h2>
+          <p>
+            Built for independent auto repair shop owners, with workflows for
+            technicians documenting findings, service advisors sharing updates,
+            and customers understanding and approving their repairs.
           </p>
         </div>
         <noscript
           ><p class="noscript">
-            This is a sample static website, ready to customize for GitHub
-            Pages. Enable JavaScript to try the buttons.
+            OpenHood is a shop management application for independent auto repair
+            shop owners. Enable JavaScript to explore more about OpenHood.
           </p></noscript
         >
+      </section>
+
+      <section class="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <span class="section-label">What we're building</span>
+          <h2 id="features-title">Better conversations.<br />Clearer repair decisions.</h2>
+          <p>
+            A look at the planned OpenHood experience: practical tools to help
+            your team explain the work and your customers feel informed.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">01 / Inspect</span>
+            <h3>Show the problem.</h3>
+            <p>
+              Capture and annotate 3D scans of worn parts. Let customers explore
+              the damage visually and understand its severity without needing
+              technical jargon.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">02 / Update</span>
+            <h3>Keep everyone in the loop.</h3>
+            <p>
+              Turn inspection photos, notes, and costs into a customer update in
+              one step. Help service advisors see which vehicles are still
+              waiting for approval.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">03 / Decide</span>
+            <h3>Make the next step clear.</h3>
+            <p>
+              Explain the problem, cause, urgency, impact, and recommended repair
+              alongside photos and itemized costs. Customers can approve or
+              decline each item remotely and explore the consequences of delay
+              with an interactive urgency timeline.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">04 / Explain</span>
+            <h3>Talk it through.</h3>
+            <p>
+              Let customers ask their technician questions through chat or hear
+              a live, plain-language audio explanation before deciding on a
+              repair, even while they're away from the shop.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">05 / Connect</span>
+            <h3>Open a window into the bay.</h3>
+            <p>
+              Give customers a live view of diagnostics and repairs, with
+              switchable camera angles. Bring messaging and one-tap work
+              approvals into the same live experience.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">06 / Welcome</span>
+            <h3>Make the wait a little better.</h3>
+            <p>
+              Let waiting customers schedule lounge services, such as food
+              delivery to their seat, through the app's timeline. Offer points
+              for completed service that customers can redeem for a gift before
+              they leave.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>A work in progress, made with possibility.</span
-      ><span>Just getting started <span aria-hidden="true">✳</span></span>
+      <span>OpenHood · Shop management, with independence in mind.</span
+      ><span>Built for your shop <span aria-hidden="true">✳</span></span>
     </footer>
   </body>
 </html>
