@@ -1,38 +1,85 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple placeholder website. Something great is on the way.">
-    <meta name="theme-color" content="#f5f7fb">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A simple placeholder website. Something great is on the way."
+    />
+    <meta name="theme-color" content="#f5f7fb" />
     <title>Welcome | Placeholder</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9CL13FSDLP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9CL13FSDLP");
+    </script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="./" aria-label="Placeholder home"><span class="brand-mark" aria-hidden="true">p.</span>placeholder</a>
-      <span class="status"><span aria-hidden="true"></span>Work in progress</span>
+      <a class="brand" href="./" aria-label="Placeholder home"
+        ><span class="brand-mark" aria-hidden="true">p.</span>placeholder</a
+      >
+      <span class="status"
+        ><span aria-hidden="true"></span>Work in progress</span
+      >
     </header>
 
     <main>
       <section class="welcome" aria-labelledby="welcome-title">
         <span class="eyebrow">A fresh start</span>
-        <h1 id="welcome-title">A little space for<br><span>something great.</span></h1>
-        <p class="intro">Welcome to our corner of the internet. This is a simple placeholder while we put the next chapter together.</p>
+        <h1 id="welcome-title">
+          A little space for<br /><span>something great.</span>
+        </h1>
+        <p class="intro">
+          Welcome to our corner of the internet. This is a simple placeholder
+          while we put the next chapter together.
+        </p>
         <div class="actions">
-          <button class="button button-primary" id="hello-button" type="button">Say hello <span aria-hidden="true">↗</span></button>
-          <button class="button button-secondary" id="about-button" type="button" aria-expanded="false" aria-controls="about">Learn more <span aria-hidden="true">+</span></button>
+          <button class="button button-primary" id="hello-button" type="button">
+            Say hello <span aria-hidden="true">↗</span>
+          </button>
+          <button
+            class="button button-secondary"
+            id="about-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="about"
+          >
+            Learn more <span aria-hidden="true">+</span>
+          </button>
         </div>
         <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
         <div class="about" id="about" hidden>
           <h2>Small beginnings. Endless possibilities.</h2>
-          <p>This sample page uses just HTML, CSS, and JavaScript. It's ready to customize and host on GitHub Pages.</p>
+          <p>
+            This sample page uses just HTML, CSS, and JavaScript. It's ready to
+            customize and host on GitHub Pages.
+          </p>
         </div>
-        <noscript><p class="noscript">This is a sample static website, ready to customize for GitHub Pages. Enable JavaScript to try the buttons.</p></noscript>
+        <noscript
+          ><p class="noscript">
+            This is a sample static website, ready to customize for GitHub
+            Pages. Enable JavaScript to try the buttons.
+          </p></noscript
+        >
       </section>
     </main>
 
-    <footer class="site-footer"><span>A work in progress, made with possibility.</span><span>Just getting started <span aria-hidden="true">✳</span></span></footer>
+    <footer class="site-footer">
+      <span>A work in progress, made with possibility.</span
+      ><span>Just getting started <span aria-hidden="true">✳</span></span>
+    </footer>
   </body>
 </html>
