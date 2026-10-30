@@ -51,3 +51,9 @@ See [GitHub's publishing source documentation](https://docs.github.com/en/pages/
 - Edit `index.html` for the page title and content.
 - Edit `styles.css` for colors, fonts, and layout.
 - Edit `script.js` for button behavior.
+
+### Add the YouTube video
+
+The main page includes a responsive 16:9 iframe with a local "coming soon" placeholder. It makes no YouTube requests until you configure a video.
+
+In `index.html`, find the iframe in `.video-section`. Replace its entire `srcdoc` attribute with `src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID"`, substituting your YouTube video's ID. Update the iframe's `title` to describe the video. Keep the other attributes for lazy loading, fullscreen, and playback permissions.
