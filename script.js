@@ -1,12 +1,13 @@
 "use strict";
 
-document.querySelectorAll("button[aria-controls]").forEach((button) => {
-  const panel = document.getElementById(button.getAttribute("aria-controls"));
+const watchLink = document.getElementById("watch-story");
 
-  button.addEventListener("click", () => {
-    const expanded = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!expanded));
-    panel.hidden = expanded;
-    button.querySelector(".button-icon").textContent = expanded ? "+" : "−";
-  });
+function trackEvent(name) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", name, { event_category: "concept_video" });
+  }
+}
+
+watchLink.addEventListener("click", () => {
+  trackEvent("before_after_cta_click");
 });

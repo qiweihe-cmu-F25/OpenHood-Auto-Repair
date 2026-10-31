@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Meet OpenHood, shop management software for independent auto repair shop owners, designed around transparent inspections, customer communication, and repair approvals."
+      content="OpenHood helps independent auto repair shops explain findings, share itemized estimates, and collect clear customer decisions. Concept preview. Pricing to be announced."
     />
-    <meta name="theme-color" content="#f5f8f6" />
-    <title>OpenHood | Independent Auto Repair Shop Management</title>
+    <meta name="theme-color" content="#f6f7f2" />
+    <title>OpenHood | Clearer repairs. Confident customers.</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <!-- Google tag (gtag.js) -->
+    <!-- Existing Google Analytics property. -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-9CL13FSDLP"
@@ -22,183 +22,122 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-9CL13FSDLP");
     </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="./" aria-label="OpenHood home"
-        ><span class="brand-mark" aria-hidden="true">oh.</span>OpenHood</a
-      >
-      <span class="status"
-        ><span aria-hidden="true"></span>Work in progress</span
-      >
-    </header>
-
-    <main id="main-content">
-      <section class="welcome" aria-labelledby="welcome-title">
-        <span class="eyebrow">Independent shops. One OpenHood.</span>
-        <h1 id="welcome-title">
-          Your shop.<br /><span>Under one hood.</span>
-        </h1>
-        <p class="intro">
-          Meet OpenHood: shop management software for independent auto repair
-          shop owners. Keep your team and customers on the same page, from the
-          first inspection to the repair decision.
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand" aria-label="OpenHood">
+          <span class="brand-mark" aria-hidden="true">oh.</span>OpenHood
+        </div>
+        <span class="status">Concept preview</span>
+      </header>
+      <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">For independent auto repair shops</p>
+            <h1 id="hero-title">
+              Clearer repairs.<br /><span>Confident customers.</span>
+            </h1>
+            <p class="intro">
+              Help customers understand the work, know the cost, and make a
+              decision. Give your team fewer approvals to chase.
+            </p>
+            <div class="offering">
+              <p class="product-type">
+                Web &amp; mobile repair communication software
+              </p>
+              <p class="pricing">
+                Pricing to be announced <span aria-hidden="true">·</span> In
+                development
+              </p>
+            </div>
+            <a class="cta" id="watch-story" href="#before-after"
+              ><span class="play-icon" aria-hidden="true">▶</span>Before &amp;
+              after video<span class="duration">Coming soon</span></a
+            >
+            <p class="cta-note">
+              The customer’s view and the shop’s view. Video coming soon.
+            </p>
+          </div>
+          <figure class="product-figure">
+            <img
+              src="assets/repair-preview.svg"
+              width="760"
+              height="760"
+              alt="Illustrated OpenHood repair example in a workshop: a phone shows a brake finding, parts and labor costs, and a recorded customer decision beside the vehicle."
+              fetchpriority="high"
+            />
+            <figcaption>
+              Concept illustration. Sample repair and prices.
+            </figcaption>
+          </figure>
+        </section>
+        <section class="benefits" aria-label="What changes with OpenHood">
+          <div>
+            <span class="step">01</span>
+            <h2>Show what’s wrong.</h2>
+            <p>Visual evidence and explanations customers can understand.</p>
+          </div>
+          <div>
+            <span class="step">02</span>
+            <h2>Make the cost clear.</h2>
+            <p>Itemized recommendations with a choice on each repair.</p>
+          </div>
+          <div>
+            <span class="step">03</span>
+            <h2>Keep work moving.</h2>
+            <p>A shared record of what’s approved and what’s waiting.</p>
+          </div>
+        </section>
+        <section class="story" id="before-after" aria-labelledby="story-title">
+          <div class="story-heading">
+            <p class="eyebrow">Before &amp; after</p>
+            <h2 id="story-title">Same repair.<br />A clearer experience.</h2>
+            <p>
+              Our upcoming video will show the customer and shop experience
+              before and after OpenHood.
+            </p>
+          </div>
+          <div class="video-frame">
+            <!-- When the video is ready, replace the entire srcdoc attribute with
+                 src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID"
+                 and update the title below. -->
+            <iframe
+              id="before-after-video"
+              title="OpenHood before and after YouTube video — coming soon"
+              width="1280"
+              height="720"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+              srcdoc="<!doctype html><html lang='en'><head><meta name='viewport' content='width=device-width, initial-scale=1'><style>html,body{height:100%;margin:0}body{display:grid;place-items:center;background:#e9eee3;color:#223b30;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:center}main{padding:24px}.play{display:inline-grid;place-items:center;width:72px;height:50px;border-radius:13px;background:#526658;color:#fff;font-size:22px}h1{margin:22px 0 8px;font-size:clamp(18px,4vw,32px);font-weight:650;letter-spacing:-.5px}p{margin:0;color:#526158;font-size:clamp(12px,2.5vw,16px);line-height:1.6}</style></head><body><main><span class='play' aria-hidden='true'>▶</span><h1>OpenHood before &amp; after</h1><p>Coming soon on YouTube</p></main></body></html>"
+            ></iframe>
+          </div>
+          <p class="video-note">
+            The before/after video will be added here when it’s ready.
+          </p>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <span>OpenHood</span>
+        <p>
+          Designed for clearer conversations between repair shops and their
+          customers.
         </p>
-        <div class="actions">
-          <button
-            class="button button-primary"
-            id="overview-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="overview"
-          >
-            Meet OpenHood <span class="button-icon" aria-hidden="true">+</span>
-          </button>
-          <button
-            class="button button-secondary"
-            id="audience-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="audience"
-          >
-            Who it's for <span class="button-icon" aria-hidden="true">+</span>
-          </button>
-        </div>
-        <div class="about" id="overview" hidden>
-          <h2>Less phone tag. More transparency.</h2>
-          <p>
-            OpenHood is being designed to connect inspection findings, repair
-            recommendations, and customer decisions. Give customers a clearer
-            picture of the work, and give your team a clearer view of what is
-            waiting for approval.
-          </p>
-        </div>
-        <div class="about" id="audience" hidden>
-          <h2>Your shop, your team, your customers.</h2>
-          <p>
-            Built for independent auto repair shop owners, with workflows for
-            technicians documenting findings, service advisors sharing updates,
-            and customers understanding and approving their repairs.
-          </p>
-        </div>
-        <noscript
-          ><p class="noscript">
-            OpenHood is a shop management application for independent auto repair
-            shop owners. Enable JavaScript to explore more about OpenHood.
-          </p></noscript
-        >
-      </section>
-
-      <section class="video-section" aria-labelledby="video-title">
-        <div class="section-heading">
-          <span class="section-label">A closer look</span>
-          <h2 id="video-title">Meet OpenHood on screen.</h2>
-          <p>A video introduction is coming soon. Watch this space.</p>
-        </div>
-        <div class="video-frame">
-          <!-- Replace srcdoc with src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" when the video is ready. -->
-          <iframe
-            title="OpenHood YouTube video placeholder"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            srcdoc="<!doctype html>
-              <html lang='en'>
-                <head>
-                  <meta name='viewport' content='width=device-width, initial-scale=1'>
-                  <style>
-                    html, body { height: 100%; margin: 0; }
-                    body { display: grid; place-items: center; background: #1f332d; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; text-align: center; }
-                    main { padding: 20px; }
-                    .play { display: inline-grid; place-items: center; width: 64px; height: 48px; border-radius: 12px; background: #36795e; font-size: 22px; }
-                    p { margin: 20px 0 8px; font-size: clamp(16px, 3vw, 24px); font-weight: 600; }
-                    small { color: #c6d9ce; font-size: 13px; }
-                  </style>
-                </head>
-                <body><main><span class='play' aria-hidden='true'>▶</span><p>OpenHood walkthrough</p><small>YouTube video coming soon</small></main></body>
-              </html>"
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <span class="section-label">What we're building</span>
-          <h2 id="features-title">Better conversations.<br />Clearer repair decisions.</h2>
-          <p>
-            A look at the planned OpenHood experience: practical tools to help
-            your team explain the work and your customers feel informed.
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">01 / Inspect</span>
-            <h3>Show the problem.</h3>
-            <p>
-              Capture and annotate 3D scans of worn parts. Let customers explore
-              the damage visually and understand its severity without needing
-              technical jargon.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">02 / Update</span>
-            <h3>Keep everyone in the loop.</h3>
-            <p>
-              Turn inspection photos, notes, and costs into a customer update in
-              one step. Help service advisors see which vehicles are still
-              waiting for approval.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">03 / Decide</span>
-            <h3>Make the next step clear.</h3>
-            <p>
-              Explain the problem, cause, urgency, impact, and recommended repair
-              alongside photos and itemized costs. Customers can approve or
-              decline each item remotely and explore the consequences of delay
-              with an interactive urgency timeline.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">04 / Explain</span>
-            <h3>Talk it through.</h3>
-            <p>
-              Let customers ask their technician questions through chat or hear
-              a live, plain-language audio explanation before deciding on a
-              repair, even while they're away from the shop.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">05 / Connect</span>
-            <h3>Open a window into the bay.</h3>
-            <p>
-              Give customers a live view of diagnostics and repairs, with
-              switchable camera angles. Bring messaging and one-tap work
-              approvals into the same live experience.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number" aria-hidden="true">06 / Welcome</span>
-            <h3>Make the wait a little better.</h3>
-            <p>
-              Let waiting customers schedule lounge services, such as food
-              delivery to their seat, through the app's timeline. Offer points
-              for completed service that customers can redeem for a gift before
-              they leave.
-            </p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>OpenHood · Shop management, with independence in mind.</span
-      ><span>Built for your shop <span aria-hidden="true">✳</span></span>
-    </footer>
+        <span class="footer-status">A product concept in development</span>
+      </footer>
+    </div>
   </body>
 </html>
