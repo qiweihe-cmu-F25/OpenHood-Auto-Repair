@@ -54,7 +54,8 @@
                 development
               </p>
             </div>
-            <a class="cta" id="watch-story" href="#before-after"
+            <a class="launch-link" href="#launch-signup">Get notified at launch <span aria-hidden="true">→</span></a>
+            <a class="video-link" id="watch-story" href="#before-after"
               ><span class="play-icon" aria-hidden="true">▶</span>Before &amp;
               after video</a
             >
@@ -125,6 +126,26 @@
           <p class="video-note">
             <a href="https://www.youtube.com/watch?v=nXgUkENXta4">Watch on YouTube</a>
           </p>
+        </section>
+        <section class="launch-signup" id="launch-signup" aria-labelledby="launch-title">
+          <div class="launch-copy">
+            <p class="eyebrow">Stay in the loop</p>
+            <h2 id="launch-title">Be there when<br />OpenHood launches.</h2>
+            <p>Leave your name and email for a notification when OpenHood is ready.</p>
+          </div>
+          <form id="launch-form" aria-labelledby="launch-title">
+            <div class="form-field">
+              <label for="signup-name">Name</label>
+              <input id="signup-name" type="text" autocomplete="name" maxlength="100" required />
+            </div>
+            <div class="form-field">
+              <label for="signup-email">Email address</label>
+              <input id="signup-email" type="email" autocomplete="email" maxlength="254" required />
+            </div>
+            <button class="cta" id="signup-submit" type="submit" disabled>Notify me at launch</button>
+            <noscript><p class="signup-note">Enable JavaScript to submit the form.</p></noscript>
+            <p class="signup-feedback" id="signup-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
         </section>
       </main>
       <footer class="site-footer">
