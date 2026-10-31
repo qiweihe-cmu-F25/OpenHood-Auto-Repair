@@ -39,6 +39,7 @@ h1 span { color: #526f59; }
 .story-heading > p:last-child { margin: 0; color: #647066; font-size: 14px; line-height: 1.8; max-width: 440px; }
 .video-frame { overflow: hidden; border-radius: 14px; border: 1px solid #d3dcd1; background: #e9eee3; }
 .video-frame iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
+.video-fallback { display: grid; place-items: center; aspect-ratio: 16 / 9; padding: 24px; color: #223b30; font-size: clamp(16px, 2.5vw, 24px); font-weight: 650; text-align: center; }
 .video-note { color: #647066; font-size: 11px; line-height: 1.7; margin: 12px 0; }
 .site-footer { display: flex; align-items: center; gap: 25px; padding: 24px 0 30px; border-top: 1px solid #d8ded2; font-size: 11px; color: #647066; line-height: 1.7; }
 .site-footer > span:first-child { font-size: 14px; color: #223b30; font-weight: 700; }

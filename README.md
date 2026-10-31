@@ -3,10 +3,10 @@
 A responsive landing page for **OpenHood**, a concept for web and mobile repair communication software for independent auto repair shops. Built with HTML, CSS, and JavaScript, with no runtime dependencies or build step.
 
 - The audience, benefit, offering and pricing status appear in the hero.
-- **Before & after video** is the single bright CTA. It is marked **Coming soon** and scrolls to the YouTube placeholder.
+- **Before & after video** is the single bright CTA and scrolls to the embedded YouTube video.
 - A local SVG illustrates a customer estimate in a service bay. The repair and dollar amounts are sample data, not a quote or software subscription price.
-- A responsive YouTube iframe placeholder reserves space for the team's future before/after video. It uses local `srcdoc` content and makes no YouTube requests until a video is configured.
-- There are no navigation menus, off-site marketing links or competing CTA buttons.
+- A responsive, lazy-loaded YouTube iframe embeds the before/after video using YouTube's privacy-enhanced domain. A text link below the player opens the video on YouTube.
+- There are no navigation menus or competing CTA buttons.
 - The existing Google Analytics tag is retained. The CTA click event is emitted through that property. Dashboard delivery/access must be verified separately.
 
 This is a product concept, not a working repair application. Customer approvals shown in the illustration are fictional demonstrations. Pricing is explicitly **to be announced** because the project has not defined a commercial price.
@@ -34,6 +34,8 @@ python -m http.server 8000 --bind 127.0.0.1
 
 Then visit <http://localhost:8000>. Press Ctrl+C to stop the server.
 
+Use the HTTP preview URL rather than opening `index.html` directly. YouTube requires an HTTP referrer for embedded playback; a `file://` preview cannot provide one and produces player error 153. Direct-file previews therefore show a link to watch on YouTube instead. The embedded player remains available when served over HTTP or HTTPS.
+
 ## Deploy to GitHub Pages
 
 1. Commit these files and push them to the `main` branch of your GitHub repository.
@@ -54,8 +56,8 @@ See [GitHub's publishing source documentation](https://docs.github.com/en/pages/
 - Edit `assets/repair-preview.svg` for the editable product illustration.
 - Pricing text is in the `.pricing` paragraph. Replace it only when an actual price has been decided.
 
-### Add the YouTube video
+### Update the YouTube video
 
-In `index.html`, find the iframe with `id="before-after-video"`. Replace the entire `srcdoc` attribute with `src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID"`, using the real YouTube video ID. Update its title to describe the finished video. Keep the responsive styling and fullscreen attributes.
+The current video is [OpenHood before & after](https://www.youtube.com/watch?v=nXgUkENXta4). In `index.html`, find the iframe with `id="before-after-video"` and replace the video ID in its `src` to change the video. Also update the **Watch on YouTube** link below the player and its title as needed. Keep the responsive styling and fullscreen attributes.
 
-When the video is available, remove the **Coming soon** badge and update the CTA, section description and note. Provide captions on YouTube and add the actual transcript if needed. Video playback analytics would require a separate YouTube player integration; the current script only measures clicks on the landing page CTA.
+Provide captions on YouTube and add the actual transcript if needed. Video playback analytics would require a separate YouTube player integration; the current script only measures clicks on the landing page CTA.
